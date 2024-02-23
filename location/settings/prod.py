@@ -3,18 +3,20 @@ from .base import *
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    'apilocation.omardanielesquivel.com',
+]
 
-CORS_ALLOW_ALL_ORIGINS = True
-CORS_ORIGIN_ALLOW_ALL = True
-CORS_ORIGIN_CREDENTIALS = False
+CORS_ALLOW_ALL_ORIGINS = False
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_CREDENTIALS = True
 CSRF_TRUSTED_ORIGINS = [
     'https://apilocation.omardanielesquivel.com',
 ]
 CORS_ALLOWED_ORIGINS = [
-    'http://*',
-    'https://*',
+    'https://apilocation.omardanielesquivel.com',
 ]
+
 
 # Apps
 LOCAL_APPS = []
