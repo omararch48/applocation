@@ -22,23 +22,23 @@ LOCAL_APPS = []
 INSTALLED_APPS += LOCAL_APPS
 
 # Database sqlite
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / f'{get_secret("DB_NAME_PROD")}.sqlite3',
-    }
-}
-# Use for postgres db
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': get_secret('DB_NAME_PROD'),
-#         'USER': get_secret('DB_USER_PROD'),
-#         'PASSWORD': get_secret('DB_PASSWORD_PROD'),
-#         'HOST': get_secret('DB_HOST_PROD'),
-#         'PORT': get_secret('DB_PORT_PROD'),
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / f'{get_secret("DB_NAME_PROD")}.sqlite3',
 #     }
 # }
+# Use for postgres db
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': get_secret('DB_NAME_PROD'),
+        'USER': get_secret('DB_USER_PROD'),
+        'PASSWORD': get_secret('DB_PASSWORD_PROD'),
+        'HOST': get_secret('DB_HOST_PROD'),
+        'PORT': get_secret('DB_PORT_PROD'),
+    }
+}
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
