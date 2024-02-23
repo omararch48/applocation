@@ -29,5 +29,5 @@ curl --request PUT --location 'https://apilocation.omardanielesquivel.com/api/up
 
 
 # Delete vehicle METHOD DELETE
-curl --request DELETE --location 'https://apilocation.omardanielesquivel.com/api/delete_vehicle/2   /' \
+curl --request DELETE --location 'https://apilocation.omardanielesquivel.com/api/delete_vehicle/2/' \
 --header 'username: omar' --header 'password: mesa.rojo_23' --header 'user-id: 1'
