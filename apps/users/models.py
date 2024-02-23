@@ -75,9 +75,9 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     REQUIRED_FIELDS = ['email', 'first_name', 'last_name',]
 
-    def save(self, *args, **kwargs):
-        self.set_password(self.password)
-        super().save(*args, **kwargs)
+    # def save(self, *args, **kwargs):
+    #     self.set_password(self.password)
+    #     super().save(*args, **kwargs)
 
     def __str__(self):
         return f'{self.last_name} {self.first_name}'
