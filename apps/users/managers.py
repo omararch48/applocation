@@ -23,8 +23,8 @@ class UserManager(BaseUserManager, models.Manager):
             is_superuser=is_superuser,
             **extra_fields
         )
-        # user.set_password(password)
-        # user.save(using=self._db)
+        user.set_password(password)
+        user.save(using=self._db)
         return user
 
     def create_user(
