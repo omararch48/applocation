@@ -1,0 +1,33 @@
+# Default settings
+location/settings.py
+
+# Cache
+__pycache__/
+
+# Staticfiles
+staticfiles/
+
+# Media files
+media/
+
+# ENV
+db_location.sqlite3
+secret.json
+command.sh
+
+# JS
+
+# Enviroments
+.back/
+.env/
+.venv/
+.pipenv/
+back/
+env/
+venv/
+pipenv/
+
+# Ignore migration files
+**/migrations/[0-9][0-9][0-9][0-9]_*.py
+**/migrations/[0-9][0-9][0-9][0-9]_*.pyc
+
