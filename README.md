@@ -1,3 +1,5 @@
+Este proyecto usa una autenticación por medio de la función authenticate de django en cada petición, tiene malas practicas sobre el manejo de autenticación pero fue hecha asi para poder facilitar el uso el algun cliente rest o por medio de comandos
+
 # Instalación
 
 La api fue desarrollada con la version 3.10 de python, se necesita crear un amiente virtual para instalar las dependencias, lo pasos son los siguientes
